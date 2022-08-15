@@ -1,5 +1,5 @@
 # ActivityNet and kinetics400
-Downloaded from https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics. I've been following the tutorial https://pytorchvideo.org/docs/tutorial_classification, which uses the Kinetics dataset, however, I have not been able to download the dataset. 
+Downloaded ActivityNet repository from https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics. I've been following the tutorial https://pytorchvideo.org/docs/tutorial_classification, which uses the Kinetics dataset, however, I have not been able to download the dataset. 
 
 
 
@@ -15,10 +15,6 @@ Currently when I try to download the bobsl dataset using the below command, the 
 
 
 
-# videos original and WSASLInfo
-/videos_original and WSASLInfo contains the WSASL dataset and info downloaded by following the WSASL download process outlined in https://github.com/gulvarol/bsl1k. By default they are separated into train, test and val.
-
-
 
 # reallocateWSASLDataset
-This python script separates the above WSASl data by each sign. To run this script, a directory called "other" needs to be created in videos_original that should contain all videos from train, test and val.
+This python script separates the above WSASL data by each sign. To run this script, first download the WSASL data by following the 'Preparing the data' section at https://github.com/gulvarol/bsl1k. After running the script 'download_wlasl.py', a videos_original directory is created that separates the WSASL videos into train, test and val. To run this script, a directory called "other" needs to be created in videos_original that should contain all videos from train, test and val.
